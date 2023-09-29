@@ -1,11 +1,14 @@
-import { View, Text } from 'react-native'
+import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Tuto from './tuto/Tuto'
+import Route from './src/screen/Route'
 
 const App = () => {
   return (
-    <Tuto/>
+    <Route/>
+    
   )
 }
 
 export default App
+
+const styles = StyleSheet.create({})
