@@ -20,4 +20,26 @@ export default  StyleSheet.create({
     title: {
       fontSize: 22,
     },
+
+    slide: {
+      flex: 1,
+      alignItems: 'center',
+      justifyContent: 'center',
+      backgroundColor: 'pink',
+    },
+    slideImage: {
+      width: 320,
+      height: 320,
+      marginVertical: 32,
+    },
+    SlideText: {
+      color: 'rgba(255, 255, 255, 0.8)',
+      textAlign: 'center',
+    },
+    slideTitle: {
+      fontSize: 22,
+      color: 'white',
+      textAlign: 'center',
+    },
+
   });
