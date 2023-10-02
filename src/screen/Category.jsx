@@ -7,6 +7,8 @@ import { updateLoading } from '../redux/loading'
 import { loadData } from '../commonjs/db'
 import ItemCategory from '../component/ItemCategory'
 import AppIntroSlider from 'react-native-app-intro-slider';
+import { useNavigation } from '@react-navigation/native'
+
 
 const slides = [
   {
@@ -45,7 +47,7 @@ const Category = ({navigation}) => {
 
       const dataCategories = await loadData('category') ;
 
-      setCategories(dataCategories) ;
+       setCategories(dataCategories) ;
 
       dispatch(updateLoading()) ;
     }
@@ -55,16 +57,17 @@ const Category = ({navigation}) => {
     loadCategory() ;
 
   }, [])
-  
 
+  
   return (
     
       <AppIntroSlider
       data={categories}
       renderItem={({item}) => <ItemCategory category={item}/>}
       keyExtractor={item => item.id}
+      showDoneButton={false}
       />
-   
+  
   )
 }
 
