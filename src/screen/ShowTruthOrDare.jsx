@@ -10,7 +10,7 @@ import { getRandomInt } from '../commonjs/function'
 
 const ShowTruthOrDare = ({route}) => {
 
-  const {id} = route.params ;
+  const {id , type} = route.params ;
 
   const [showtod, setshowTod] = useState() ;
 
@@ -19,7 +19,7 @@ const ShowTruthOrDare = ({route}) => {
   const loadDareOrTruth = async () => { 
     console.log('loadDareOrTruth') ;
 
-    const dataTruthOrDare = await loadDataDareOrTruth(id) ;
+    const dataTruthOrDare = await loadDataDareOrTruth(id , type) ;
 
     console.log('dataTruthOrDare' , dataTruthOrDare) ; 
 
