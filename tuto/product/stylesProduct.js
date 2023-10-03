@@ -29,9 +29,15 @@ export const stylesProduct = StyleSheet.create({
         fontSize:14, 
         color:"#434343" , 
         fontWeight:"700",
-    }
+    },
 
-    
+    contentButtonFilter:{
+        //backgroundColor:"red",
+        paddingVertical:10,
+        flexDirection:"row",
+        justifyContent:"space-around"
+        
+    },
 
 
 

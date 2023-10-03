@@ -5,6 +5,8 @@ import CategoryStore from './category/CategoryStore'
 import { Provider } from 'react-redux'
 import { store } from './redux/store'
 import ProductData from './product/ProductData'
+import ProductStore from './product/ProductStore'
+import ProductFirestore from './product/ProductFirestore'
 
 const Tuto = () => {
   return (
@@ -13,7 +15,9 @@ const Tuto = () => {
       {/* <Text>Tuto</Text> */}
       <CategoryData/>
       {/* <CategoryStore/> */}
-      <ProductData/>
+      {/* <ProductData/> */}
+      <ProductStore/>
+      {/* <ProductFirestore/> */}
     </View>
     </Provider>
   )
