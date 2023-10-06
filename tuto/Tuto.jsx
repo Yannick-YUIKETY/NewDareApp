@@ -7,6 +7,7 @@ import { store } from './redux/store'
 import ProductData from './product/ProductData'
 import ProductStore from './product/ProductStore'
 import ProductFirestore from './product/ProductFirestore'
+import ProductApi from './product/ProductApi'
 
 const Tuto = () => {
   return (
@@ -16,8 +17,9 @@ const Tuto = () => {
       <CategoryData/>
       {/* <CategoryStore/> */}
       {/* <ProductData/> */}
-      <ProductStore/>
+      {/* <ProductStore/> */}
       {/* <ProductFirestore/> */}
+      <ProductApi/>
     </View>
     </Provider>
   )
