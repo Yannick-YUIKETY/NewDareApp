@@ -47,7 +47,7 @@ export const player = createSlice({
 
         nextPlayer:(state,action) => {
 
-            console.log('action.payload' ,action.payload) ;
+            //console.log('action.payload' ,action.payload) ;
 
             const newState = { ...state, position: action.payload }
 
@@ -59,7 +59,7 @@ export const player = createSlice({
             //console.log("prev state " , state) ;
             //console.log("action.payload" , action.payload) ;
 
-            state[state.position].tod.push(action.payload) ;
+            state.players[state.position].tod.push(action.payload) ;
             //console.log('nextState' , state) ;
         },
 
